@@ -96,6 +96,8 @@ include_directories(include
   ${EIGEN3_INCLUDE_DIRS}
   ${OpenCV_INCLUDE_DIRS}
 )
+include_directories(/include/apriltag)
+LINK_DIRECTORIES(/include/apriltag)
 
 add_library(${PROJECT_NAME}_common src/common_functions.cpp)
 add_dependencies(${PROJECT_NAME}_common ${PROJECT_NAME}_generate_messages_cpp)
